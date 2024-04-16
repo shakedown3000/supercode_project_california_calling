@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+}
+
+html {
+    max-width: 1316px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-family: "Work Sans";
+}
+
+h1, h2 {
+    font-family: "Inter";
+}
+
+h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.hero {
+    padding-top: 20%;;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.hero p {
+    line-height: 4;
+    margin-top: 20px;
+
+}
+.hero h1:last-of-type {
+    line-height: 0.35;
+    text-shadow: 1px 1px 0px #ffffff,  1px 1px 0 #ffffff,  1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    color: black;
+}
+
+.hero div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.hero img {
+    width: auto;
+    height: 60%
+}
+
+.hero button, 
+footer button {
+    font-weight: 100;
+    font-size: 20.8px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    padding: 0.8em 1.8em;
+}
+
+.hero button:hover, 
+footer button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.facts {
+    color: white;
+    background-color: black;
+    height: auto;
+}
+
+h2 {
+    font-size: 95.75px;
+}
+
+.facts div {
+    width: 80%;
+    padding: 5%;
+    line-height: 1;
+}
+
+.facts div:last-of-type {
+    line-height: 1.2;
+}
+
+.facts p {
+    font-size: 14px;
+}
+
+.facts p:nth-child(even) {
+    padding-bottom: 1.3em;
+}
+
+.facts span {
+    font-family: "Inter";
+    font-size: 90.75px;
+    font-weight: 600;
+}
+
+/* Gallery */
+
+.gallery {
+    background-color: #f5f5f5;
+    height: 95em;
+    width: auto;
+    position: relative;
+}
+
+.gallery img {
+    width: 25%;
+    position: absolute;
+}
+
+.gallery img:nth-of-type(1) {
+    right: 10em;
+    top: -5em; 
+}
+
+.gallery img:nth-of-type(2) {
+    top: 5em;
+    left: 5em;
+    width: 18%;
+}
+.gallery img:nth-of-type(3) {
+    top: 20em;
+    right: 0;
+    width: 18%;
+}
+.gallery img:nth-of-type(4) {
+    top: 40em;
+    left: 10em;
+}
+.gallery img:nth-of-type(5) {
+    top: 50em;
+    right: 15em;
+}
+.gallery img:nth-of-type(6) {
+    top: 68em;
+    left: 0;
+    width: 18%;
+}
+.gallery img:nth-of-type(7) {
+    bottom: 0;
+    right: 25em;
+}
+
+.gallery div {
+    position: relative;
+    width: 28em;
+}
+.gallery div:first-of-type {
+    top: 14em;
+    left: 25em;
+}
+
+.gallery div:last-of-type {
+    top: 55em;
+    left: 25em;
+}
+
+h3 {
+    font-size: 83px;
+    line-height: 1;
+    font-weight: 600;
+    padding-bottom: 0.1em;
+    letter-spacing: -2px;
+}
+
+/* The Golden Bear */
+
+.bear {
+    color: white;
+    height: 60em;
+    background-color: black;
+    padding: 10%;
+    position: relative;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.bear div:first-of-type {
+    width: 5em;
+    font-size: 83.58px;
+    height: fit-content;
+}
+
+.bear div:first-of-type p {
+    font-size: 19.75px;
+}
+
+.bear div:last-of-type {
+    width: 20em;
+    font-size: 28.97px;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.bear div:last-of-type p:last-of-type {
+    font-size: 18.43px;
+    line-height: 3em;
+    font-weight: 100;
+}
+
+.bear img:first-of-type {
+    width: 50%;
+    position: absolute;
+    bottom: -10em;
+    z-index: 2;
+}
+
+.bear img:last-of-type {
+    width: 30%;
+    position: absolute;
+    right: 15em;
+    bottom: -5em;
+    z-index: 1;
+}
+
+.white_animation {
+    height: 20em;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.white_animation div {
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+.white_animation img {
+    width: 110%;
+    animation: rotate 20s linear infinite;
+    margin-top:-10em;
+    margin-left: 6em;
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg);
+}
+}
+
+.poppy {
+    height: 80em;
+    background-color: #f5f5f5;
+    color: black;
+    height: 
+}
+
+.poppy img:first-of-type {
+    width: 20%; 
+    bottom: 10em;
+    left: 15em;
+    z-index: 1;
+}
+
+.poppy img:last-of-type {
+    width: 50%; 
+    bottom: 2em;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    font-size: 12px;
+}
+footer div:nth-of-type(1) {
+   width: 20em; 
+}
+
+footer div:first-of-type > p:nth-of-type(2) {
+    width: 20em;
+    font-size: 28.97px;
+    font-weight: 500;
+    height: fit-content;
+    padding-bottom: 2em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer_info div:last-of-type p {
+    padding: 0.2em 0;
+}
+
+.social img {
+    height: 1.5em;
+}
+
+.partners img {
+    width: 5em;
+}
+
