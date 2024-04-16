@@ -238,6 +238,8 @@ h3 {
     z-index: 0;
 }
 
+/* White Animation Section  */
+
 .white_animation div {
     width: 30em;
     height: 20em;
@@ -257,6 +259,8 @@ h3 {
     100% { transform: rotate(360deg);
 }
 }
+
+/* Poppy */
 
 .poppy {
     height: 80em;
@@ -284,12 +288,16 @@ footer {
     color: white;
     padding: 5%;
     font-size: 12px;
-}
-footer div:nth-of-type(1) {
-   width: 20em; 
+    overflow: hidden;
+    max-height: 70vh;
 }
 
-footer div:first-of-type > p:nth-of-type(2) {
+.calendar  {
+   width: 20%; 
+   padding-top: 5%;
+}
+
+.calendar p:nth-of-type(2) {
     width: 20em;
     font-size: 28.97px;
     font-weight: 500;
@@ -319,4 +327,39 @@ footer div:first-of-type > p:nth-of-type(2) {
 .partners img {
     width: 5em;
 }
+
+.banner {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    text-decoration: uppercase;
+    overflow: hidden;
+}
+  
+  .date-list {
+    padding-right: 0;
+    padding-top: 0.1%;
+    animation: ticker 10s linear infinite;
+    font-size: 4rem;
+    line-height: 6.25vh;
+    margin: 0;
+  }
+  
+  .year {
+    color: #fff;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  @keyframes ticker {
+    0%,
+    100% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+  }
 
